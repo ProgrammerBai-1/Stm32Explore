@@ -1,0 +1,11 @@
+1.建立工程文件夹
+2.复制Stm32Project_STD工程下的文件到建立的工程文件夹下
+3.在keil里选择工程文件夹新建工程
+4.选择芯片型号
+5.在工程管理里将文件添加进来
+   <1>:CMSIS里的全部文件
+   <2>:Lib->src里的全部文件
+   <3>:Startup下的startup_stm32f10x_md.s
+   <4>:User里的全部文件
+6.在工程目标选项页中C/C++下Define栏填:USE_STDPERIPH_DRIVER
+7.在工程目标选项页中C/C++下IncludePath栏添加所有文件夹索引,注意Lib文件夹下的子文件夹单独添加.
